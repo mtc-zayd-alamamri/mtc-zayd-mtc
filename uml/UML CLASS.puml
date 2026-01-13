@@ -1,0 +1,15 @@
+@startuml
+
+class Student {
+  studentId
+  name
+}
+
+class Course {
+  courseCode
+  title
+}
+
+Student "1" -- "0..*" Course : registers
+
+@enduml
